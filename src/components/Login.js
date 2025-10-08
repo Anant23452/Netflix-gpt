@@ -25,15 +25,10 @@ function Login() {
                     <p>or</p>
                     <div className="w-20 border-b-2  "></div>
                 </div>
-                <p className='text-white'>new on netflix?</p>
-                <button
-                    type="button"
-                    className='bg-gray-900 text-white px-20 py-3 rounded-md text-l font-bold'
-                    onClick={signupHandler}
-                >
-                    Sign Up
-                </button>
-
+                <p className='text-white'>new on netflix?
+                    <span className='text-blue-600 cursor-pointer' onClick={signupHandler}>{signup ? "Sign in" : "Sign up"} </span>
+                </p>
+               
             </form>
         </div>
     )
