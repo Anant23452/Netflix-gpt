@@ -24,7 +24,7 @@ function Login() {
                     <div className="w-20 border-b-2  "></div>
                     <p>or</p>
                     <div className="w-20 border-b-2  "></div>
-                </div>
+                </div>2
                 <p className='text-white'>new on netflix?
                     <span className='text-blue-600 cursor-pointer' onClick={signupHandler}>{signup ? "Sign in" : "Sign up"} </span>
                 </p>
