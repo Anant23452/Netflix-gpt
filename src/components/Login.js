@@ -7,9 +7,10 @@ function Login() {
     const signupHandler = () => {
         setsignup(!signup);
     }
-
+    //useRef for getting the value of the input fields
     const email =useRef("null");
     const password =useRef("null");
+
    const handleButtonClick =()=>{
         //validation of the from  data 
         console.log(email.current.value);
