@@ -1,14 +1,20 @@
-import React, { useState } from 'react'
+import React, { useReducer, useRef, useState } from 'react'
 import Header from './Header'
+import { checkValidaData } from '../utils/Validate';
 
 function Login() {
     const [signup, setsignup] = useState(false)
     const signupHandler = () => {
         setsignup(!signup);
     }
+
+    const email =useRef("null");
+    const password =useRef("null");
    const handleButtonClick =()=>{
         //validation of the from  data 
-        
+        console.log(email.current.value);
+        console.log(password.current.value);
+        checkValidaData(email.current.value,password.current.value);
    } 
     return (
         <div className='relative bg-black-600    ' >
@@ -21,8 +27,13 @@ function Login() {
                         <input type="text" placeholder='Name' className='p-3 rounded-md px-10  bg-transparent border-2 placeholder:text-xl' />
                     )
                 }
-                <input type="text" placeholder='Email' className='p-3 rounded-md px-10  bg-transparent border-2 placeholder:text-xl' />
-                <input type="text" placeholder='Password' className='p-3 rounded-md px-10 bg-transparent border-2 placeholder:text-xl  ' />
+                <input
+                type="text"
+                placeholder='Email'
+                ref={email}
+                className='p-3 rounded-md px-10  bg-transparent border-2 placeholder:text-xl'
+                    />
+                <input type="password" placeholder='Password'   ref={password}  className='p-3 rounded-md px-10 bg-transparent border-2 placeholder:text-xl  ' />
                 < button className='bg-red-600 text-white px-28 py-3 rounded-md text-xl font-bold  ' type='button' onClick={handleButtonClick} >Sign In</button>
                 <div className="flex justify-center items-center gap-4 text-white">
                     <div className="w-20 border-b-2  "></div>
