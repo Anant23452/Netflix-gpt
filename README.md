@@ -18,3 +18,8 @@ Not authentication
  -Sign in /sign up page
     -Firebase or Auth0 for authentication (if applicable)   
     -redirect to main app after login
+
+
+
+    Form validation
+    -Error handling -using useRef hook

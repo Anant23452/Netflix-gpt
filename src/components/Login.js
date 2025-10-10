@@ -6,6 +6,10 @@ function Login() {
     const signupHandler = () => {
         setsignup(!signup);
     }
+   const handleButtonClick =()=>{
+        //validation of the from  data 
+        
+   } 
     return (
         <div className='relative bg-black-600    ' >
             <Header />
@@ -19,12 +23,12 @@ function Login() {
                 }
                 <input type="text" placeholder='Email' className='p-3 rounded-md px-10  bg-transparent border-2 placeholder:text-xl' />
                 <input type="text" placeholder='Password' className='p-3 rounded-md px-10 bg-transparent border-2 placeholder:text-xl  ' />
-                < button className='bg-red-600 text-white px-28 py-3 rounded-md text-xl font-bold  ' type='button' >Sign In</button>
+                < button className='bg-red-600 text-white px-28 py-3 rounded-md text-xl font-bold  ' type='button' onClick={handleButtonClick} >Sign In</button>
                 <div className="flex justify-center items-center gap-4 text-white">
                     <div className="w-20 border-b-2  "></div>
                     <p>or</p>
                     <div className="w-20 border-b-2  "></div>
-                </div>2
+                </div>
                 <p className='text-white'>new on netflix?
                     <span className='text-blue-600 cursor-pointer' onClick={signupHandler}>{signup ? "Sign in" : "Sign up"} </span>
                 </p>
