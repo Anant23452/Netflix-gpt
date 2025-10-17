@@ -1,4 +1,5 @@
 export const checkValidaData = (email, password,name) => {
+  // Simple regex patterns for validation
   const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   const isPasswordValid = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);
   const isNameValid=/^[a-zA-Z\s]+$/.test(name);
