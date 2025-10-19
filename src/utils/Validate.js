@@ -6,6 +6,8 @@ export const checkValidaData = (email, password,name) => {
 
   if (!isEmailValid) {
     return "Invalid email format";
+
+    
   }
 
   if (!isPasswordValid) {
