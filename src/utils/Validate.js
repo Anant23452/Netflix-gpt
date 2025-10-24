@@ -7,7 +7,7 @@ export const checkValidaData = (email, password,name) => {
   if (!isEmailValid) {
     return "Invalid email format";
 
-    
+    // co-de
   }
 
   if (!isPasswordValid) {
