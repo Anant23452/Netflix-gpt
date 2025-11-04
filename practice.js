@@ -1,8 +1,26 @@
-let arr=[5,3,2,0,1,4];
-
-function sum(n){
-   let isodd=(arr[n]%2 !=0);
-   if(n==0)return isodd?arr[n]:0;
-   return (isodd?arr[n]+sum(n-1):0+sum(n-1));
+function fact(n){
+    if(n==0){
+        return 1;
+    }
+    return n*fact(n-1);
 }
-console.log(sum(arr.length-1));
+console.log(fact(5));
+
+
+//two pointer approach
+//floyds cycle detection algorithm
+function hasCycle(head) {
+    if (!head) return false;
+    let slow = head;
+    let fast =head.next;
+    while(fast!=slow){
+        if(fast==null || fast.next ==null){
+            return false;
+        }
+        slow = slow.next;
+        fast =fast.next.next;
+    }
+    return trui;
+    
+
+    }
