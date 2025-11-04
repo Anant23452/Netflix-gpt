@@ -20,7 +20,7 @@ function hasCycle(head) {
         slow = slow.next;
         fast =fast.next.next;
     }
-    return trui;
+    return true;
     
 
     }
