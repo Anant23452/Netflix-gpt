@@ -21,6 +21,6 @@ function hasCycle(head) {
         fast =fast.next.next;
     }
     return true;
-    
+    //this code of floyds cycle detection algorithm is used to detect cycle in linked list
 
     }
