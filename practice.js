@@ -23,4 +23,6 @@ function hasCycle(head) {
     return true;
     //this code of floyds cycle detection algorithm is used to detect cycle in linked list
 
+    //why i am not doing noting 
+
     }
