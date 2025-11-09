@@ -25,6 +25,7 @@ function hasCycle(head) {
 
     //why i am not doing noting 
     //wy i am not doing noting
+    //todya nothing do 
     
 
     }
