@@ -1,33 +1,17 @@
-function fact(n){
-    if(n==0){
-        return 1;
-    }
-    return n*fact(n-1);
-}
-console.log(fact(5));
-
-
-//two pointer approach
-//floyds cycle detection algorithm
-function hasCycle(head) {
-    if (!head) return false;
-    let slow = head;
-    let fast =head.next;
-    while(fast!=slow){
-        if(fast==null || fast.next ==null){
-            return false;
+ let arr= [-2,1,-3,4,-1,2,1,-5,4]
+var maxSubArray = function (arr) {
+    let sum = 0;
+    let max = 0;
+    if (arr.length == 1) return arr[0];
+    for (let i = 0; i < arr.length; i++) {
+       for(let j=0;i<arr.length;j++){
+         sum = arr[j] + sum;
+        if (max < sum) {
+            max = sum;
         }
-        slow = slow.next;
-        fast =fast.next.next;
-    }
-    return true;
-    //this code of floyds cycle detection algorithm is used to detect cycle in linked list
-
-    //why i am not doing noting 
-    //wy i am not doing noting
-    //todya nothing do 
-
-    //today nothing we arge doing 
-    
+       }
 
     }
+    return max; /arr
+};
+maxSubArray(arr)
