@@ -15,4 +15,4 @@ var maxSubArray = function (arr) {
     return max; /arr
 };
 maxSubArray(arr)
-//ioi
+//ioijhgjkhgu
