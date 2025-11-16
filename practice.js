@@ -13,6 +13,7 @@ var maxSubArray = function (arr) {
 
     }
     return max; 
+    //retulk
 };
 maxSubArray(arr)
 //ioijhgjkhgu
