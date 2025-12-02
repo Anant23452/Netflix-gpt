@@ -16,4 +16,4 @@ var maxSubArray = function (arr) {
     //retulk ytfy t
 };
 maxSubArray(arr)
-//ioijhgjkhgumlkm lghkjhrregflj;jiklm
+//ioijhgjkhgumlkm lghkjhrregflj;jiklmdg5r4
