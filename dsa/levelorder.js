@@ -13,7 +13,7 @@ root.left.left = new TreeNode(5);
 root.left.right = new TreeNode(6);
 root.right.left = new TreeNode(7);
 root.right.right = new TreeNode(8);
-
+//lever order traversing 
 
 var levelOrder = function(root){
     let q =[root];
