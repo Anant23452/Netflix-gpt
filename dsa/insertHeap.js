@@ -34,6 +34,6 @@ class MinHeap{
 }
 
 let Heap = new MinHeap();
-console.log(Heap.heap);
+console.log(Heap);
 Heap.intsert(3);
 console.log(Heap);
