@@ -73,5 +73,4 @@ Heap.intsert(3);
 console.log(Heap);
 Heap.extractMin();
 console.log(Heap);
-Heap.peek()
-console.log(peek);
+console.log(Heap.peek());
