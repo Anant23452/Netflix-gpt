@@ -16,4 +16,7 @@ var maxSubArray = function (arr) {
     //retulk ytfy t
 };
 maxSubArray(arr)
+// let built map
+let map1 = new Map();
+let map2= {};
 //ioijhgjkhgumlkm lghkjhrregflj;jiklmdg5r4
