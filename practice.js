@@ -24,3 +24,27 @@ let map2= {};
 
 
 //detect cycle in undireted connected graph
+function pahsecycle(edges){
+    let graph = {};
+    for(let [x,y] of edges){
+        if(!graph[x])graph[x]=[];
+        if(!graph[y])graph[y]=[];
+        graph[x].push(y);
+        graph[y].push(x);
+        let visited = new Set();
+        let dfs = (curr,parent)=>{
+           visted.add(curr);
+           for(let neighbor of graph[curr]){
+            if(!visited.has(neighbor)){
+                dfs(neighbor,curr);
+            }
+            else if(neighbor!==parent){
+                return true;
+            }
+            return false;
+           }    
+        }
+        return dfs(0,-1);
+    }
+}
+console.log(pahsecycle([[0,1],[1,2],[2,0]]))
